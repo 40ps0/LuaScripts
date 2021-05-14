@@ -5,4 +5,4 @@ have fun browsing
 
 # Announcement
 Owner made 3 ( almost 4 ) scripts in a single day
-Owner planning to make ZekeHub v2 
+and Owner planning to make ZekeHub v2 
