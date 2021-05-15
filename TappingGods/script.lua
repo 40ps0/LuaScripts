@@ -21,7 +21,7 @@ end)
 AF:NewToggle("Auto Rebirth x1", function(p)
     R = p
     while R do wait()
-        local A_1 = 10
+        local A_1 = 1
         local Event = game:GetService("ReplicatedStorage").Events.Rebirth
         Event:FireServer(A_1)
 end
