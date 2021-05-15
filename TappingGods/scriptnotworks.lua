@@ -1,0 +1,81 @@
+-- Game Link : https://www.roblox.com/games/5346447287
+local LogEvent = game:GetService('ReplicatedStorage').CC_Lookout -- Anti Cheat Bypass
+LogEvent:Destroy()
+
+-- init
+local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/GreenDeno/Venyx-UI-Library/main/source.lua"))()
+local venyx = library.new("Tapping Gods", 5013109572)
+
+
+-- Tables
+local Eggs = {}
+for i,v in pairs(game:GetService('Workspace').Eggs:GetChildren()) do
+    table.insert(Eggs, v.Name)
+end
+
+local Properties = {
+    ['1'] = false,
+    ['2'] = false,
+    ['3'] = false,
+    ['4'] = false,
+}
+
+local Main = venyx:addPage("Main")
+local MSec = Main:addSection("Main")
+
+MSec:addToggle("Auto Tap", nil, function(p)
+    getgenv().sautotap = p;
+    while wait() do
+        if not getgenv().sautotap then return end
+        if getgenv().sautotap then
+            game:service("ReplicatedStorage").Events.Tap:FireServer()
+        end
+    end
+end)
+
+MSec:addToggle("Fast Auto Tap", nil, function(v)
+    getgenv().autotap = v;
+    while wait() do
+        if not getgenv().autotap then return end
+        if getgenv().autotap == true then
+            game:GetService("ReplicatedStorage").Events.Tap:FireServer()
+            game:GetService("ReplicatedStorage").Events.Tap:FireServer()
+            game:GetService("ReplicatedStorage").Events.Tap:FireServer()
+            game:GetService("ReplicatedStorage").Events.Tap:FireServer()
+            game:GetService("ReplicatedStorage").Events.Tap:FireServer()
+            game:GetService("ReplicatedStorage").Events.Tap:FireServer()
+            game:GetService("ReplicatedStorage").Events.Tap:FireServer()
+            game:GetService("ReplicatedStorage").Events.Tap:FireServer()
+            game:GetService("ReplicatedStorage").Events.Tap:FireServer()
+            game:GetService("ReplicatedStorage").Events.Tap:FireServer()
+            game:GetService("ReplicatedStorage").Events.Tap:FireServer()
+            game:GetService("ReplicatedStorage").Events.Tap:FireServer()
+            game:GetService("ReplicatedStorage").Events.Tap:FireServer()
+            game:GetService("ReplicatedStorage").Events.Tap:FireServer()
+            game:GetService("ReplicatedStorage").Events.Tap:FireServer()
+            game:GetService("ReplicatedStorage").Events.Tap:FireServer()
+            game:GetService("ReplicatedStorage").Events.Tap:FireServer()
+            game:GetService("ReplicatedStorage").Events.Tap:FireServer()
+    end
+end
+end)
+
+MSec:addToggle("Auto Hatch", nil, function(t)
+    if t then
+        tweenService, tweenInfo = game:GetService('TweenService'), TweenInfo.new(2, Enum.EasingStyle.Linear)
+        Tween = tweenService:Create(game:GetService('Players').LocalPlayer.Character.HumanoidRootPart, tweenInfo, {CFrame = CFrame.new(game:GetService('Workspace').Eggs[_G.SelectedEgg]:FindFirstChild('EggName').Position)})
+        Tween:Play()
+        _G.AutoHatch = true
+        while wait() do
+        if _G.AutoHatch then
+        game:GetService('ReplicatedStorage').Events.OpenEgg:FireServer(_G.SelectedEgg, nil, nil, nil, Properties)
+        end
+        end
+    else
+        _G.AutoHatch = false
+    end
+end)
+
+MSec:addDropdown("Egg", {"Starter Egg", "Spiky Egg", ""}, function(t)
+    _G.SelectedEgg = t
+end)
