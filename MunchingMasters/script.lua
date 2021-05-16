@@ -49,6 +49,10 @@ MSection:addButton("Open Shop", function()
 	game:GetService("Players").LocalPlayer.PlayerGui.MainUI.Shop.Visible = true
 end)
 
+MSection:addbutton("Note", function()
+	venyx:Notify("Sell Circle wont work after your activated autosell, from now on use "Auto Sell" or gay
+end)
+
 local tps = page:addSection("Teleports")
 tps:addTextbox("No features yet :)", "suggest some", function(value)
 	print(value)
