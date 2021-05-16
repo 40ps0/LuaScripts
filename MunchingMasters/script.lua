@@ -50,7 +50,7 @@ MSection:addButton("Open Shop", function()
 end)
 
 MSection:addbutton("Note", function()
-	venyx:Notify("Sell Circle wont work after your activated autosell, from now on use "Auto Sell" or gay
+	venyx:Notify("Sell Circle wont work after your activated autosell, from now on use Auto Sell or gay")
 end)
 
 local tps = page:addSection("Teleports")
