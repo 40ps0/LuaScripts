@@ -18,7 +18,7 @@ local Properties = {
 }
 
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/forumsLib/main/source.lua"))()
-local TappingGods = Library.new("Tapping Gods")
+local TappingGods = Library.new("Triton")
 
 local Main = TappingGods:NewSection("Main")
 local Gamepasses = TappingGods:NewSection('Gamepasses')
