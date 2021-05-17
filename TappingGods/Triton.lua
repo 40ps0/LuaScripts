@@ -104,5 +104,5 @@ Teleports:NewButton("Boss Island", function()
 end)
 
 Misc:NewKeybind("Keybind UI", Enum.KeyCode.RightControl, function()
-    TappingGods:UIMinimize()
+    Library:UIMinimize()
 end)
