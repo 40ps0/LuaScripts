@@ -17,6 +17,11 @@ local Properties = {
     ['4'] = false,
 }
 
+local list = {
+    'UI Creator : xHeptc',
+    'Scripter : ZekGT',
+}
+
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/forumsLib/main/source.lua"))()
 local TappingGods = Library.new("Triton")
 
@@ -105,4 +110,8 @@ end)
 
 Misc:NewKeybind("Keybind UI", Enum.KeyCode.RightControl, function()
     Library:UIMinimize()
+end)
+
+Misc:NewDropdown('Credits', list, function()
+    setclipboard("https://cocacola.com")
 end)
