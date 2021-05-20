@@ -36,7 +36,9 @@ main:Toggle("Auto Sell", "yep", false, function(value)
     end
 end)
 
-misc:Dropdown("Credits", {"UI : dawid", "Script : ZekGT"})
+misc:Dropdown("Credits", {"UI : dawid", "Script : ZekGT"}, function()
+    setclipboard("https://github.com/zekgt/")
+end)
 
 misc:Label("UI Toggle : RightControl")
 
