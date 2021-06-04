@@ -1,5 +1,3 @@
-getgenv().namehere = "Your Username";
-
 --// Windows and Pages
 local Flux = loadstring(game:HttpGet"https://raw.githubusercontent.com/dawid-scripts/UI-Libs/main/fluxlib.txt")()
 
