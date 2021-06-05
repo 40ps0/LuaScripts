@@ -33,6 +33,11 @@ folder1name:Toggle("Toggle Text", function(boolean) -- Boolean : True, False -- 
     print(toggle1)
 end)
 
+--// Create Box
+folder1name:Box("Box","number",function(value) -- "number" or "string"
+    print(value)
+end)
+
 --// Create Slider
 folder1name:Slider("Slider Text",{
     min = 1; -- Min value/lowest value
