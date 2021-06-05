@@ -23,8 +23,8 @@ end) -- must have parenthesis to indicate the end of a button
 --// Create Label
 folder1name:Label("Label Text",{
     TextSize = 25; -- Text Size
-    TextColor = Color3.fromRGB(255, 255, 255) -- Text Color ( 255, 255, 255) is white
-    BgColor = Color3.fromRGB(69, 69, 69) -- nice
+    TextColor = Color3.fromRGB(255, 255, 255); -- Text Color ( 255, 255, 255) is white
+    BgColor = Color3.fromRGB(69, 69, 69); -- nice
  })
 
 --// Create Toggle
@@ -49,5 +49,5 @@ end)
 
 --// Create Keybind
 folder1name:Bind("bind text", Enum.KeyCode.RightControl, function()
-    print("?") -- will print "?" if you pressed RightControl, open console to see it do /console or F9 or Fn + F9
+    print("?") -- will print "?" if you pressed RightControl and will toggle ui on/off ( ofc ), open console to see it do /console or F9 or Fn + F9
 end)
