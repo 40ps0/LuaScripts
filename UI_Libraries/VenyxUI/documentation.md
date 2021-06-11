@@ -62,7 +62,7 @@ venyx:Notify("Notification Title", "Notification Content")
 # Key Bind
 ```lua
 section1:addKeybind("Keybind Text Label", Enum.Keycode.RightControl, function()
-    ventx:toggle()
+    venyx:toggle()
 end)
 ```
 # Combined
