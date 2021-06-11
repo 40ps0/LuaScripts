@@ -101,7 +101,7 @@ section1:addKeybind("Keybind Text Label", Enum.KeyCode.RightControl, function()
     venyx:toggle()
  end)
  ```
-#Result
-[.](https://i.vgy.me/ZWyna5.jpg)
+# Result
+[Click Here](https://i.vgy.me/ZWyna5.jpg)
 
 
