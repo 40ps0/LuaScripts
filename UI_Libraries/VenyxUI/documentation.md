@@ -4,7 +4,7 @@ local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Green
 ```
 # Create Window 
 ```lua
-local venyx = library.new("Munching Masters", 5013109572)
+local venyx = library.new("Name", 5013109572)
 ```
 # Themes
 ```lua
@@ -61,14 +61,14 @@ venyx:Notify("Notification Title", "Notification Content")
 ```
 # Key Bind
 ```lua
-section1:addKeybind("Keybind Text Label", Enum.Keycode.RightControl, function()
+section1:addKeybind("Keybind Text Label", Enum.KeyCode.RightControl, function()
     venyx:toggle()
 end)
 ```
 # Combined
 ```lua
 local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/GreenDeno/Venyx-UI-Library/main/source.lua"))()
-local venyx = library.new("Munching Masters", 5013109572)
+local venyx = library.new("Name", 5013109572)
 local themes = {
 	Background = Color3.fromRGB(24, 24, 24),
 	Glow = Color3.fromRGB(0, 0, 0),
@@ -97,7 +97,7 @@ local slider1 = section1:addDropdown("Slider Text Label", 16, 0, 500, function(v
     game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = value
 end)
 venyx:Notify("Notification Title", "Notification Content")
-section1:addKeybind("Keybind Text Label", Enum.Keycode.RightControl, function()
+section1:addKeybind("Keybind Text Label", Enum.KeyCode.RightControl, function()
     venyx:toggle()
  end)
  ```
