@@ -23,7 +23,7 @@ local page1 = venyx:addPage("Page Text Label")
 ```
 # Create Section
 ```lua
-local section1 = page1:addPage("Section Text Label")
+local section1 = page1:addSection("Section Text Label")
 ```
 # Create Button
 ```lua
@@ -78,7 +78,7 @@ local themes = {
 	TextColor = Color3.fromRGB(255, 255, 255)
 }
 local page1 = venyx:addPage("Page Text Label")
-local section1 = page1:addPage("Section Text Label")
+local section1 = page1:addSection("Section Text Label")
 local button1 = section1:addButton("Button Text Label", function() -- use variables to refer to that button
     print("Button Clicked!")
 end)
