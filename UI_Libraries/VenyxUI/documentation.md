@@ -51,7 +51,7 @@ end)
 
 # Create Slider
 ```lua
-local slider1 = section1:addDropdown("Slider Text Label", 16, 0, 500, function(value) -- min, default, max
+local slider1 = section1:addSlider("Slider Text Label", 16, 0, 500, function(value) -- min, default, max
     game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = value
 end)
 ```
