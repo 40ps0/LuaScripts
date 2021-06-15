@@ -1,5 +1,5 @@
 # Documentation for KavoUI Library
-made this is 1 hours please appreciate my work
+made this is 1 hour please appreciate my work
 # Local Loadstring
 ```lua
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
