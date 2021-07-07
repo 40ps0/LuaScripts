@@ -53,4 +53,13 @@ end)
 --[[ Useless Stuff 
       Q. When do I have to use getgenv()?
       A. You have to use it when declaring a global like _G., unlike _G. getgenv() isn't detected since it is made by synapse
-]]
+]]--
+
+--[[#include <iostream>
+using workspace std;
+
+
+int main() {
+    cout << "GoodBye!";
+    return 0;
+}]]--
